@@ -1,0 +1,61 @@
+#map {
+  position: relative;
+  width: 744px; height: 577px;
+  background: url("map.png") no-repeat;
+}
+#map .area {
+  position: absolute;
+}
+#map #map-data {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#map #overview {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#map #overview {
+  border: 1px solid #000;
+  margin-top: 1px;
+}
+#map h3 {
+  text-align: center;
+  font-size: 16px;
+  margin: 4px;
+}
+#map #overview ul {
+  margin-top: 4px;
+
+}
+#map #overview ul li{
+  font-size: 12px;
+  padding: 4px 0;
+}
+#map #overview ul a{
+  color: #f00;
+  text-decoration: none;
+  padding: 0 2px;
+}
+a.switch {
+  color: none;
+  text-decoration: none;
+  width: 16;
+  height: 16px;
+  display: block;
+  position: absolute;
+  background: url(ss_btn.png) no-repeat;
+}
+
+a.switch-hide {
+  background: url(zk_btn.png) no-repeat;
+}
+.switch-rt {
+  top: 0;
+  right: 0;
+}
+.switch-lb {
+  left: 0;
+  bottom: 0;
+}
