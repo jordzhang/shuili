@@ -15,6 +15,17 @@ get '/' do
   erb :index
 end
 
+get '/m1' do
+  return 'm1'
+end
+get '/m2' do
+  return 'm2'
+end
+
+get '/a' do
+  return "a";
+end
+
 class Data1
   attr_reader :id, :name, :time, :top, :left, :level, :status
   def initialize(options={})

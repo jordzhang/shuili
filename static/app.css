@@ -5,6 +5,13 @@
 }
 #map .area {
   position: absolute;
+  font-size: 12px;
+  color: #000;
+}
+#map .area-data {
+  text-decoration: none;
+  background: url("zz01.png") no-repeat;
+  padding-left: 10px;
 }
 #map #map-data {
   position: absolute;
@@ -17,17 +24,21 @@
   right: 0;
 }
 #map #overview {
-  border: 1px solid #000;
+  border: 1px solid gray;
   margin-top: 1px;
+  background: #ecf4ff;
 }
 #map h3 {
   text-align: center;
   font-size: 16px;
-  margin: 4px;
+  margin: 4px 0;
+  padding: 4px 0;
+  border-bottom: 1px solid gray;
 }
 #map #overview ul {
   margin-top: 4px;
-
+  padding-left:20px;
+  padding-right: 4px;
 }
 #map #overview ul li{
   font-size: 12px;
@@ -61,9 +72,12 @@ a.switch-hide {
 }
 #map-data .main {
   margin-bottom: 16px;
+  background: #eee;
 }
 .map-box p {
-  margin: 5px 0;
+  margin-bottom: 0px;
+  background: #aaa;
+  padding: 5px;
 }
 .map-box table {
   border-collapse:collapse;
@@ -75,5 +89,5 @@ a.switch-hide {
   padding: 4px;
 }
 .map-box table th {
-  background-color: #eee;
+  background-color: #bbb;
 }
