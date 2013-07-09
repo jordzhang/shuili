@@ -4,11 +4,14 @@ require "sinatra"
 require "sinatra/reloader" if development?
 
 set :public_folder, File.dirname(__FILE__) + '/static'
+set :bind, '0.0.0.0'
 
 get '/' do
   @datas = []
   @datas << Data1.new({id: :a, name: '水库1', time: '07-07 12:00', top: 100, left: 90, level: 19, status: 0})
   @datas << Data1.new({id: :a, name: '水库2', time: '07-07 12:00', top: 300, left: 500, level: 19, status: 0})
+  @datas << Data1.new({id: :a, name: '水库3', time: '07-07 12:00', top: 500, left: 500, level: 19, status: 0})
+  @datas << Data1.new({id: :a, name: '水库4', time: '07-07 12:00', top: 400, left: 300, level: 19, status: 0})
   erb :index
 end
 

@@ -59,3 +59,21 @@ a.switch-hide {
   left: 0;
   bottom: 0;
 }
+#map-data .main {
+  margin-bottom: 16px;
+}
+.map-box p {
+  margin: 5px 0;
+}
+.map-box table {
+  border-collapse:collapse;
+  margin-bottom: 6px;
+}
+.map-box td, .map-box th{
+  border: 1px solid #ccc;
+  margin: 0px;
+  padding: 4px;
+}
+.map-box table th {
+  background-color: #eee;
+}
