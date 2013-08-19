@@ -101,3 +101,15 @@ a.switch-hide {
 #condition .main table th {
   background-color: #bbb;
 }
+.area-tip {
+  display: none;
+  border-collapse:collapse;
+
+}
+.area-tip td, .area-tip th {
+  border: 1px solid #ccc;
+}
+.qtip-content {
+  height: 65px;
+  overflow-y: auto;
+}

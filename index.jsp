@@ -90,10 +90,31 @@
     {{for datas }}
     <div class="area" style="top:{{:top}}px;left:{{:left}}px;" id="area_{{:code}}">
       <a href="{{:link}}" class="area-data">{{:name}}<span>{{:height}}</span></a>
-      <div style="display:none;">
-        <p class="area_shui" id="area_shui_{{:code}}"><span>水位：</span> <span>{{:height}}</span></p>
-        <p class="area_time" id="area_time_{{:code}}"><span>时间：</span><span>{{:time}}</span></p>
-      </div>
+      <table class="area-tip">
+        <tr>
+          <th style="width: 30px;">水位</th>
+          <th  style="width: 250px;">时间</th>
+        </tr>
+        <tr>
+          <td>{{:height}}</td>
+          <td>{{:time}}</td>
+        </tr>
+        <tr>
+          <td>{{:height}}</td>
+          <td>{{:time}}</td>
+        </tr>
+        <tr>
+          <td>{{:height}}</td>
+          <td>{{:time}}</td>
+        </tr>
+        {{if name=='苏州'}}
+        <tr>
+          <td>{{:height}}</td>
+          <td>{{:time}}</td>
+        </tr>
+        {{/if}}
+      </table>
+
     </div>
     {{/for}}
   </script>

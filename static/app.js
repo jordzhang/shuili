@@ -25,10 +25,15 @@ function updateData() {
     $(".area-data").each(function(){
       $(this).qtip({
         content: {
-          text: $(this).next("div")
+          text: $(this).next()
         },
         position: {
+          target: 'mouse',
+          adjust: { mouse: false },
           viewport: $("#map")
+        },
+        style : {
+          classes: "qtip-blue"
         }
       })
     });
