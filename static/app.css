@@ -78,7 +78,7 @@ a.switch-hide {
   left: 0;
 }
 #condition .main {
-  width: 200px;
+  /*width: 200px;*/
   background: #eee;
   position: absolute;
   bottom: 0;
@@ -101,6 +101,18 @@ a.switch-hide {
 #condition .main table th {
   background-color: #bbb;
 }
+#condition .main thead > tr , #condition .main tbody{
+  display: block;
+}
+#condition .main tbody {
+  max-height: 90px;
+  overflow-y: auto;
+  width: 100%;
+}
+#condition .main tr {
+  /*padding: 3px 10px;*/
+  display: block;
+}
 .area-tip {
   display: none;
   border-collapse:collapse;
@@ -109,7 +121,14 @@ a.switch-hide {
 .area-tip td, .area-tip th {
   border: 1px solid #ccc;
 }
-.qtip-content {
-  height: 65px;
-  overflow-y: auto;
+table .header-fixed {
+  position: fixed;
+  top: 40px;
+  /*left: 0;*/
+  /*right: 0;*/
+  z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+  border-bottom: 1px solid #d5d5d5;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
 }

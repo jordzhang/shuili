@@ -42,12 +42,17 @@
         <table>
           <thead>
             <tr>
-              <th>data1</th>
-              <th>data2</th>
-              <th>data3</th>
+              <th>A111</th>
+              <th>A211</th>
+              <th>A311</th>
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
             <tr>
               <td>1</td>
               <td>2</td>
@@ -63,9 +68,9 @@
         <table>
           <thead>
             <tr>
-              <th>data1</th>
-              <th>data2</th>
-              <th>data3</th>
+              <th>d1</th>
+              <th>d2</th>
+              <th>d3</th>
             </tr>
           </thead>
           <tbody>
@@ -79,6 +84,7 @@
               <td>2</td>
               <td>3</td>
             </tr>
+
           </tbody>
         </table>
       </div>
