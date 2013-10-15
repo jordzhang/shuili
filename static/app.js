@@ -12,7 +12,7 @@ $(function(){
   });
   updateData();
   setInterval("updateData()", 5000)
-  fixTable();
+  $('#condition .main table').tableScroll({width:180,height:70});
 })
 function updateData() {
   $.getJSON("json.jsp", function(data) {
@@ -38,26 +38,5 @@ function updateData() {
         }
       })
     });
-    // $('#condition .main table').fixedHeader({topOffset: 10})
-  // $('#condition .main table').fixedHeaderTable({ height: 100});
-  })
-}
-function fixTable() {
-
-  var mixTable = null;
-  var width = 0;
-  $('#condition .main table').each(function(){
-    if ($(this).width() > width) {
-      mixTable = $(this);
-      width = $(this).width();
-    }
-  });
-  var tdWidth = []
-  mixTable.find("thead th").each(function(){
-    tdWidth.push($(this).width());
-  })
-  var len = tdWidth.length;
-  $('#condition .main table th, #condition .main table td').each(function(index){
-    $(this).width(tdWidth[index%len]+2);
   })
 }

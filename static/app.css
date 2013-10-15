@@ -76,13 +76,15 @@ a.switch-hide {
   position: absolute;
   bottom: 0;
   left: 0;
+
 }
 #condition .main {
-  /*width: 200px;*/
+  width: 200px;
   background: #eee;
   position: absolute;
   bottom: 0;
   left: 0;
+  border: 1px solid #ccc;
 }
 #condition .main p {
   margin-bottom: 0px;
@@ -90,29 +92,45 @@ a.switch-hide {
   padding: 5px;
 }
 #condition .main table {
-  border-collapse:collapse;
-  width: 100%;
+  /*border-collapse:collapse;*/
+  border-spacing: 0;
+}
+.tablescroll {
+  margin-top:10px;
+}
+
+#condition .main table {
+  margin:0;
+  /*border:0;*/
+}
+
+#condition .main table tbody tr.first td {
+  border-top:0;
+}
+/*
+#condition .main thead, #condition .main tbody{
+  margin: 0;
+  padding: 0;
 }
 #condition .main td, #condition .main th{
   border: 1px solid #ccc;
   margin: 0px;
-  padding: 4px;
+  padding: 4px 6px;
 }
-#condition .main table th {
+#condition .main table thead th {
   background-color: #bbb;
 }
 #condition .main thead > tr , #condition .main tbody{
-  display: block;
+
 }
 #condition .main tbody {
-  max-height: 90px;
+  max-height: 200px;
   overflow-y: auto;
   width: 100%;
 }
 #condition .main tr {
-  /*padding: 3px 10px;*/
   display: block;
-}
+}*/
 .area-tip {
   display: none;
   border-collapse:collapse;
@@ -121,14 +139,4 @@ a.switch-hide {
 .area-tip td, .area-tip th {
   border: 1px solid #ccc;
 }
-table .header-fixed {
-  position: fixed;
-  top: 40px;
-  /*left: 0;*/
-  /*right: 0;*/
-  z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
-  border-bottom: 1px solid #d5d5d5;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
-}
+

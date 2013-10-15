@@ -10,10 +10,12 @@
   <script type="text/javascript" src="static/jquery.qtip.js"></script>
   <script type="text/javascript" src="static/jquery.modal.js"></script>
   <script type="text/javascript" src="static/jsrender.js"></script>
+  <script type="text/javascript" src="static/jquery.tablescroll.js"></script>
   <script type="text/javascript" src="static/app.js"></script>
 
   <link rel="stylesheet" type="text/css" href="static/jquery.qtip.css">
   <link rel="stylesheet" type="text/css" href="static/jquery.modal.css">
+  <link rel="stylesheet" type="text/css" href="static/jquery.tablescroll.css">
   <link rel="stylesheet" type="text/css" href="static/app.css">
 </head>
 <body>
@@ -39,15 +41,20 @@
             <option>今日水情</option>
           </select>
         </p>
-        <table>
+        <table cellspaing="0">
           <thead>
             <tr>
-              <th>A111</th>
-              <th>A211</th>
-              <th>A311</th>
+              <td>A111</td>
+              <td>A211</td>
+              <td>A311</td>
             </tr>
           </thead>
           <tbody>
+            <tr class="first">
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
             <tr>
               <td>1</td>
               <td>2</td>
@@ -65,16 +72,16 @@
             </tr>
           </tbody>
         </table>
-        <table>
+        <table cellspaing="0">
           <thead>
             <tr>
-              <th>d1</th>
-              <th>d2</th>
-              <th>d3</th>
+              <td>d1</td>
+              <td>d2</td>
+              <td>d3</td>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="first">
               <td>1</td>
               <td>2</td>
               <td>3</td>
