@@ -23,7 +23,7 @@ for(int i=0; i< 10; i++) {
   sb.append(",");
   sb.append("\"").append("left").append("\"").append(":").append("\"").append(Math.round(Math.random()*744)).append("\"");
   sb.append(",");
-  sb.append("\"").append("link").append("\"").append(":").append("\"").append("area.jsp").append("\"");
+  sb.append("\"").append("link").append("\"").append(":").append("\"").append("static/1.swf").append("\"");
   sb.append(",");
   sb.append("\"").append("height").append("\"").append(":").append("\"").append(Math.round(Math.random()*100)).append("\"");
   sb.append(",");

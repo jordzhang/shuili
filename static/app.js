@@ -40,3 +40,6 @@ function updateData() {
     });
   })
 }
+function openDialog() {
+  $("#detail").dialog({model:true, width: 670});
+}

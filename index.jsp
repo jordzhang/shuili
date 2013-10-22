@@ -8,14 +8,14 @@
   <meta http-equiv="pragma" content="no-cache" />
   <script type="text/javascript" src="static/jquery-1.9.1.js"></script>
   <script type="text/javascript" src="static/jquery.qtip.js"></script>
-  <script type="text/javascript" src="static/jquery.modal.js"></script>
   <script type="text/javascript" src="static/jsrender.js"></script>
   <script type="text/javascript" src="static/jquery.tablescroll.js"></script>
+  <script type="text/javascript" src="static/jquery-ui/ui/jquery-ui.js"></script>
   <script type="text/javascript" src="static/app.js"></script>
 
   <link rel="stylesheet" type="text/css" href="static/jquery.qtip.css">
-  <link rel="stylesheet" type="text/css" href="static/jquery.modal.css">
   <link rel="stylesheet" type="text/css" href="static/jquery.tablescroll.css">
+  <link rel="stylesheet" type="text/css" href="static/jquery-ui/themes/redmond/jquery-ui-1.10.3.custom.css">
   <link rel="stylesheet" type="text/css" href="static/app.css">
 </head>
 <body>
@@ -99,10 +99,13 @@
     </div>
 
   </div>
+  <div id="detail">
+    <object type="application/x-shockwave-flash" data="static/1.swf" width="100%" height="100%" id="chart" style="visibility: visible;"></object>
+  </div>
   <script type="text/x-jsrender" id="area_tmpl" >
     {{for datas }}
     <div class="area" style="top:{{:top}}px;left:{{:left}}px;" id="area_{{:code}}">
-      <a href="{{:link}}" class="area-data">{{:name}}<span>{{:height}}</span></a>
+      <a href="javascript:openDialog()" class="area-data">{{:name}}<span>{{:height}}</span></a>
       <table class="area-tip">
         <tr>
           <th style="width: 30px;">水位</th>
